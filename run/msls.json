@@ -1,0 +1,31 @@
+{
+    "numruns" : 30,
+    "seed" : 1,
+    "islands" : [
+        {
+            "numislands" : 1,
+            "popsize" : 1,
+            "offspring" : 1,
+            "maxevals" : 1000000,
+            "initialization" : {
+                "name": "randomlanding"
+            },
+            "selection" : {
+                "name" : "best"
+            },
+            "variation" : [
+            	{
+                    "name" : "randominmigrant",
+                    "parameters" : ["1.0"]
+                },
+                {
+                    "name" : "landingimprovement",
+                    "parameters" : ["1", "1000000"]
+                }
+            ],
+            "replacement" : {
+                "name" : "comma"
+            }
+        }
+    ]
+}

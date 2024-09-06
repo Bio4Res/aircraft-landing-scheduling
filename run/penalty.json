@@ -1,0 +1,32 @@
+{
+    "numruns" : 30,
+    "seed" : 1,
+    "islands" : [
+        {
+            "numislands" : 1,
+            "popsize" : 100,
+            "offspring" : 99,
+            "maxevals" : 1000000,
+            "initialization" : {
+                "name": "randomseq"
+            },
+            "selection" : {
+                "name" : "tournament",
+                "parameters" : ["2"]
+            },
+            "variation" : [
+                {
+                    "name" : "ux",
+                    "parameters" : ["0.9"]
+                },
+                {
+                    "name" : "randomsubstitution",
+                    "parameters" : ["0.6321"]
+                }
+            ],
+            "replacement" : {
+                "name" : "comma"
+            }
+        }
+    ]
+}

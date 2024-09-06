@@ -1,0 +1,8 @@
+{
+	"numruns": 30,
+	"seed": 1,
+	"iterations": 1000000,
+	"amplification": 1,
+	"update": 100,
+	"neighbors": 1000000
+}
